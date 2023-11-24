@@ -9,7 +9,7 @@ class Stripped_Custom_Walker extends Walker_Nav_Menu {
         // Indent of the HTML
         $indent = ( $depth ) ? str_repeat( "\t", $depth ) : "";
 
-        // Breake line if index 0
+        // Breake line of index 0. Fixes the annoying thing from the Walker_Nav_Menu that the first li ends up at the same line of html as the start ul. It is only to make it slightly prettier when viewing the page source. Nothing else. 
         $breake_first_line = ( $this->item_index === 0 ) ? "\n" : "";
 
         // A new collection of classes
