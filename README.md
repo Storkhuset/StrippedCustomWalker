@@ -16,4 +16,6 @@ There is also some additional features in the class that is not in use but can b
 I have also added a role of presentation to the menu item and a role of navigation to the sub menu ul element. I suggest you to add that to the top level ul element as well. You do that in the wp_nav_menu() function with the ”items_wrap” option. 
 Simply add: ```’items_wrap' => '<ul id="%1$s" class="%2$s" role="navigation">%3$s</ul>’``` to the options array. 
 
-I realize that most intermediate to advanced developers will see this Walker as a step down in functionality but then again, it’s not aimed at them.
+I realize that most intermediate to advanced developers will see this Walker as a step down in functionality but then again, it’s not aimed at them. So in all honesty, it’s only for me since nobody will ever view or use it anyway.
+
+Thank you!
