@@ -10,7 +10,7 @@ class Stripped_Custom_Walker extends Walker_Nav_Menu {
         $indent = ( $depth ) ? str_repeat( "\t", $depth ) : "";
 
         // Breake line if index 0
-        $breake_first_line = ($this->item_index === 0) ? "\n" : "";
+        $breake_first_line = ( $this->item_index === 0 ) ? "\n" : "";
 
         // Menu item ID
         $item_id = esc_attr( $data_object->ID );
@@ -43,10 +43,10 @@ class Stripped_Custom_Walker extends Walker_Nav_Menu {
         $page_id = esc_attr( $data_object->object_id );
 
         // Get the target post excerpt or a trimed version of the content (NOT IN USE IN THIS SETUP)
-        $target_excerpt = get_the_excerpt( $page_id );
+        // $target_excerpt = get_the_excerpt( $page_id );
 
         // Get the target page or post featured image of size 'medium' (NOT IN USE IN THIS SETUP)
-        $target_featured_image = ( has_post_thumbnail( $page_id ) ) ? get_the_post_thumbnail( $page_id, 'medium' ) : "";
+        // $target_featured_image = ( has_post_thumbnail( $page_id ) ) ? get_the_post_thumbnail( $page_id, 'medium' ) : "";
 
         // Get the array of all default menu item classes
         $default_classes = implode( ' ', $data_object->classes );
