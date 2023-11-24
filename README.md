@@ -3,7 +3,7 @@ A stripped and "dumbed down" WordPress Nav Walker. All cool and smart solutions 
 Many of the default css classes are removed and some are renamed. 
 
 List of CSS Classes
-• menu-item
+• menu-item<br>
 • menu-item--home
 • menu-item--current
 • menu-item--has-children
