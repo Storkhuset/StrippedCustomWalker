@@ -4,7 +4,7 @@ class Stripped_Custom_Walker extends Walker_Nav_Menu {
 
     private $item_index = 0;
 
-	public function start_el(&$output, $data_object, $depth = 0, $args = null, $current_object_id = 0) {
+    public function start_el(&$output, $data_object, $depth = 0, $args = null, $current_object_id = 0) {
 
         // Indent of the HTML
         $indent = ( $depth ) ? str_repeat( "\t", $depth ) : "";
